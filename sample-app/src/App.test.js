@@ -13,3 +13,7 @@ it('renders Welcome title', () => {
   const welcome = <h1 className="App-title">Welcome to React</h1>;
   expect(app.contains(welcome)).toEqual(true);
 });
+
+it('renders Danger Button', () => {
+
+});
