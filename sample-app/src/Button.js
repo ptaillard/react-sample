@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Button.css';
 
 class Button extends Component {
 
@@ -7,7 +8,7 @@ class Button extends Component {
     };
 
     render() {
-        return <div onClick={this.click} className="Button" />;
+        return <button type="button" onClick={this.click} className="Button">Alert</button>;
     };
 }
 
