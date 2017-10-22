@@ -24,8 +24,15 @@ class BoardSwitcher extends Component {
       };
     }
 
+    nextBoard = (previousState, props) => {
+      return {
+        selectedBoard:(previousState.selectedBoard+1) % props.numBoards, 
+        boards: []
+      }
+    }
+
     changeBoard = () => {
-      this.setState({selectedBoard:(this.state.selectedBoard+1) % this.props.numBoards, boards: []});
+      this.setState(this.nextBoard);
     }
   
     render() {
